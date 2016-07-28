@@ -24,6 +24,9 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/d850/bluetooth
 
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := d850_defconfig
 TARGET_REQUIRES_BUMP := true
